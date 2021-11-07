@@ -1,0 +1,13 @@
+.my-games-card {
+    display:flex;
+    border: 1px solid #EDEDED;
+    padding: 1rem;
+    width: 75%;
+    border-radius: 10px;
+    background: #20272b;
+    color: #962bff;
+  }
+
+.card img {
+    border-radius: 10px;
+}

@@ -1,0 +1,24 @@
+.card {
+    flex-direction: column;
+    border: 1px solid #EDEDED;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 150px;
+    margin-bottom: 1rem;
+    max-width: 250px;
+    background: rgb(138,63,252);
+    color: white;
+    background: -moz-linear-gradient(180deg, rgba(138,63,252,1) 0%, rgba(73,29,139,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(138,63,252,1) 0%, rgba(73,29,139,1) 100%);
+    background: linear-gradient(180deg, rgba(138,63,252,1) 0%, rgba(73,29,139,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a3ffc",endColorstr="#491d8b",GradientType=1);
+}
+
+.playerCount {
+    display: inline;
+}
+.playerCount svg {
+    height: 15%;
+    display: inline;
+    fill: white;
+}

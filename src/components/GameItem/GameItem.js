@@ -1,12 +1,28 @@
 import React from 'react';
+import '../../carbon-components.min.css';
+import './GameItem.css';
+import {ReactComponent as UserIcon} from '../Icons/user.svg';
 
-export default function GameItem({ name, type, imageUrl, joinGame}) {
-    return (
-        <div className="card">
-            <h2>{name}</h2>
-            <img src={imageUrl} alt=""/>
-            <small>{type}</small>
-            <button onClick={joinGame}>Join Game</button>
+export default function GameItem({ 
+    imageUrl, 
+    name, 
+    type,
+    players, 
+}) {
+  return (
+    <div className="gameCard">
+       <div className="card" >
+            <button className="bx--tag bx--tag--blue">
+                <span className="bx--tag__label">{type}</span>
+            </button>
+            <h5>{name}</h5>
+            <div className="playerCount">
+                <UserIcon />
+                <h6>{players}</h6>
+            </div>
         </div>
-    );
+        
+    </div>
+     
+  );
 }
